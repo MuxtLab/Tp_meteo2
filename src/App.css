@@ -1,0 +1,95 @@
+body {
+  
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  /* padding-left: 50px; */
+}
+
+.App h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  flex-direction: column;
+}
+
+.grid-item div {
+  padding-left: 10px;
+}
+.grid-item {
+  padding-top: 50px;
+}
+
+.card {
+  background-color: #ededed;
+  color: rgb(15, 14, 14);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card-items {
+  color: #A7408A;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  /* .grid-container {
+      flex-direction: row;
+      justify-content: space-between;
+  } */
+
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item1 {
+  }
+
+  .grid-item {
+    padding-top: 0px;
+  }
+
+  .App {
+    font-family: Arial, sans-serif;
+    /* padding-left: 0px; */
+  }
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1024px) {
+  .grid-container {
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .App h1 {
+    font-size: 45px;
+  }
+
+  .grid-item {
+    padding-top: 0px;
+  }
+
+  .card {
+    padding: 20px;
+    width: 400px;
+  }
+
+}
